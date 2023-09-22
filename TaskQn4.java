@@ -9,11 +9,14 @@
 // *****
 
 // *****
-
+import java.util.Scanner;
 public class TaskQn4 {
     public static void main(String[] args) {
-        for (int i = 0; i <5;i++) {
-            System.out.println("*****");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a number");
+        int a=sc.nextInt();
+        for (int i = 0; i <a;i++) {
+            System.out.println("******");
         }
     }
     
