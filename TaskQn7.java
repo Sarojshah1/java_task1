@@ -1,0 +1,3 @@
+public class TaskQn7 {
+    
+}
