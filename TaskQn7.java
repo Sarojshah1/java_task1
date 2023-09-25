@@ -19,8 +19,6 @@ public class TaskQn7 {
         
         scanner.close();
     }
-
-    // Function to calculate the HCF using the Euclidean algorithm
     public static int calculateHCF(int a, int b) {
         while (b != 0) {
             int temp = b;
