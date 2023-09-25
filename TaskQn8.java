@@ -8,24 +8,19 @@ public class TaskQn8 {
         System.out.print("Enter an integer: ");
         int number = scanner.nextInt();
         
-        int reversedNumber = reverseDigits(number);
+         int reversed = 0;
         
-        System.out.println("Reversed number: " + reversedNumber);
+        while (number != 0) {
+            int digit = number % 10;   
+            reversed = reversed * 10 + digit;
+            number /= 10;              
+        }
+        
+        System.out.println("Reversed number: " + reversed);
         
         scanner.close();
     }
 
-    // Function to reverse the digits of an integer
-    public static int reverseDigits(int num) {
-        int reversed = 0;
-        
-        while (num != 0) {
-            int digit = num % 10;   // Get the last digit
-            reversed = reversed * 10 + digit;
-            num /= 10;              // Remove the last digit
-        }
-        
-        return reversed;
-    }
+
     
 }
